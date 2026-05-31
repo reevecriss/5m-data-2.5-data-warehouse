@@ -1,0 +1,9 @@
+name: 'austin_bikeshare_demo'
+version: '1.0.0'
+profile: 'austin_bikeshare_demo'
+
+models:
+  austin_bikeshare_demo:
+    star:                          # the /models/star/ subfolder
+      +materialized: table         # build as a real table, not a view
+      +schema: star               # deploy into a 'star' schema in BigQuery
